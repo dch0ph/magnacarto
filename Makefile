@@ -31,7 +31,7 @@ CMDS=magnacarto magnaserv magnacarto-mapnik
 build: $(CMDS)
 
 magnacarto: $(DEPS)
-	go build -ldflags "$(VERSION_LDFLAGS)" ./cmd/magnacarto
+	go build -ldflags "$(VERSION_LDFLAGS)" -buildvcs=false ./cmd/magnacarto
 
 magnaserv: $(DEPS)
 	go build -ldflags "$(VERSION_LDFLAGS)" ./cmd/magnaserv

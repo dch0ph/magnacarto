@@ -33,7 +33,7 @@ func (b *Builder) AddMSS(mss string) {
 	b.mss = append(b.mss, mss)
 }
 
-// SetMML sets/overwirtes the mml file of this builder.
+// SetMML sets/overwrites the mml file of this builder.
 func (b *Builder) SetMML(mml string) {
 	b.mml = mml
 }
